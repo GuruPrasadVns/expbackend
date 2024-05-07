@@ -1,0 +1,79 @@
+Expense Types
+############################################################################
+POST : http://localhost:3000/api/expensetypes
+{
+   "title" : "monthly expense",
+  "description" : "to track monthly expense"
+}
+
+GET : http://localhost:3000/api/expensetypes/662750c1cad8357b1ca86358
+
+DELETE : http://localhost:3000/api/expensetypes/662750c1cad8357b1ca86358
+
+PUT : http://localhost:3000/api/expensetypes/66275192e9b72cc8909368c6
+ {
+   "title" : "monthly expense updated",
+  "description" : "to track monthly expense updated"
+}
+
+
+Transaction Types
+############################################################################
+POST : http://localhost:3000/api/transactiontypes
+    {
+       "title" : "income",
+      "description" : "to track all incomes"
+    }
+
+GET : http://localhost:3000/api/transactiontypes/662750c1cad8357b1ca86358
+
+DELETE : http://localhost:3000/api/transactiontypes/662750c1cad8357b1ca86358
+
+PUT : http://localhost:3000/api/transactiontypes/66275192e9b72cc8909368c6
+ {
+   "title" : "monthly expense updated",
+  "description" : "to track monthly expense updated"
+}
+
+Accounts
+############################################################################
+POST : http://localhost:3000/api/accounts
+    {
+       "name" : "hdfc bank",
+      "description" : "salary account",
+      "address" : "rs puram coimbatore"
+    }
+
+GET : http://localhost:3000/api/transactiontypes/662750c1cad8357b1ca86358
+
+DELETE : http://localhost:3000/api/transactiontypes/662750c1cad8357b1ca86358
+
+PUT : http://localhost:3000/api/transactiontypes/66275192e9b72cc8909368c6
+ {
+   "title" : "monthly expense updated",
+  "description" : "to track monthly expense updated"
+}
+
+Transactions
+############################################################################
+POST : http://localhost:3000/api/transactions
+    {
+           "title" : "salary credited",
+          "description" : "March 24 salary credited",
+          "type": "credit",
+          "accountId": "66277c8b5fc1906b10429a40",
+          "transactionTypeId" : "662787355fc1906b10429a4e",
+          "amount" : 100000
+        }
+
+                {
+                       "title" : "Rent april24",
+                      "description" : "gurgaon rent april24",
+                      "type": "debit",
+                      "accountId": "66277c5f5fc1906b10429a3e",
+                      "transactionTypeId" : "6627876f5fc1906b10429a54",
+                     "expenseTypeId": "662786c45fc1906b10429a43",
+                      "amount" : 18000
+                    }
+
+GET : http://localhost:3000/api/transactiontypes/662750c1cad8357b1ca86358

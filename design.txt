@@ -1,0 +1,183 @@
+TransactionType
+---------------------------------------------------------------
+title :
+description :
+
+income, transfer, investment, expense
+
+[
+    {
+        "_id": "662a1cf04873d4664ded3cca",
+        "title": "income",
+        "description": "to track all income transactions",
+        "__v": 0
+    },
+    {
+        "_id": "662a1cfd4873d4664ded3ccc",
+        "title": "transfer",
+        "description": "to track all transfer transactions",
+        "__v": 0
+    },
+    {
+        "_id": "662a1d0c4873d4664ded3cce",
+        "title": "investment",
+        "description": "to track all investment transactions",
+        "__v": 0
+    },
+    {
+        "_id": "662a1d174873d4664ded3cd0",
+        "title": "expense",
+        "description": "to track all expense transactions",
+        "__v": 0
+    }
+]
+************************************************************************************************************************
+Income Types
+--------------------------------------------------------------------------------
+title :
+description :
+
+salary, dividend, bonus
+
+[
+    {
+        "title": "initial balance",
+        "description": "for initial balance",
+        "_id": "662b4e464c7c3bab3beb28ee",
+        "__v": 0
+    },
+    {
+        "_id": "662a1ee24873d4664ded3ce3",
+        "title": "salary",
+        "description": "to track salary income",
+        "__v": 0
+    },
+    {
+        "_id": "662a1f0d4873d4664ded3ce5",
+        "title": "dividend",
+        "description": "to track dividend income",
+        "__v": 0
+    },
+    {
+        "_id": "662a1f174873d4664ded3ce7",
+        "title": "bonus",
+        "description": "to track bonus income",
+        "__v": 0
+    }
+]
+************************************************************************************************************************
+Expense Types
+----------------------------------------------------------------------------------
+title :
+description :
+
+monthly expense, groceries expense, electricity bill, water bill, general expense, petrol bill
+
+[
+    {
+        "_id": "662a1df04873d4664ded3cd4",
+        "title": "monthly expense",
+        "description": "to track monthly expense",
+        "__v": 0
+    },
+    {
+        "_id": "662a1dfe4873d4664ded3cd6",
+        "title": "groceries expense",
+        "description": "to track groceries expense",
+        "__v": 0
+    },
+    {
+        "_id": "662a1e114873d4664ded3cd8",
+        "title": "electricity bill",
+        "description": "to track electricity bill",
+        "__v": 0
+    },
+    {
+        "_id": "662a1e1e4873d4664ded3cda",
+        "title": "water bill",
+        "description": "to track water bill",
+        "__v": 0
+    },
+    {
+        "_id": "662a1e2f4873d4664ded3cdc",
+        "title": "genral expense",
+        "description": "to track genral expense",
+        "__v": 0
+    },
+    {
+        "_id": "662a1e3d4873d4664ded3cde",
+        "title": "petrol bill",
+        "description": "to track petrol bill",
+        "__v": 0
+    }
+]
+************************************************************************************************************************
+Account
+--------------------------------------
+name :
+address :
+description :
+balance :
+
+[
+    {
+        "_id": "662a207a4873d4664ded3ceb",
+        "name": "icici bank",
+        "description": "trading account",
+        "address": "sec 18 noida",
+        "balance": 0,
+        "__v": 0
+    },
+    {
+        "_id": "662a20924873d4664ded3ced",
+        "name": "hdfc bank",
+        "description": "salary account",
+        "address": "rs puram coimbatore",
+        "balance": 0,
+        "__v": 0
+    }
+]
+
+**********************************************************************************************************************
+Income
+----------------------------------------------------------------------------
+title:
+description:
+toAccount:
+incomeType:
+amount:
+
+
+
+Transaction
+------------------------------------------------------------------------
+title :
+description:
+type : ['debit', 'credit']
+account:
+transactionType:['income', 'transfer','investment', 'expense']
+expenseType :
+amount:
+fundTransferId:
+
+Fund Transfer
+-----------------------------------------------------------------------
+title:
+description:
+fromAccount:
+toAccount:
+amount:
+
+
+
+
+
+Expense
+----------------------------------------------------------------------------
+title:
+description:
+fromAccount:
+amount:
+
+
+
